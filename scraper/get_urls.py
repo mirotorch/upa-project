@@ -15,4 +15,4 @@ for page in pages_urls:
     soup = BeautifulSoup(response.text, 'html.parser')
     urls = soup.find_all('a', class_=href_class)
     for url in urls:
-        print(url['href'])
+        print('https://www.digikey.cz' + url['href'])
